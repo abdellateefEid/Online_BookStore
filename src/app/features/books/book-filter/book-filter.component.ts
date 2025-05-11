@@ -1,6 +1,6 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { CategoryService } from '../../../core/services/category.service';
-// import { Category } from '../../../core/models/category';
+
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { BookFilterService } from '../../../core/services/book-filter.service';
