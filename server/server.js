@@ -63,11 +63,6 @@ app.get("/api/check-payment/:sessionId", async (req, res) => {
   }
 });
 
-// Serve the Angular application
-app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "public", "index.html")); // إرسال ملف index.html
-});
-
 // Start server
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);

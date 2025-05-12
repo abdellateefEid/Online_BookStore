@@ -72,11 +72,7 @@ export class CheckoutComponent {
       localStorage.setItem("order", JSON.stringify(orderData));
       localStorage.setItem("cartId", cart.id);
       this.initiatePayment(orderData);
-      // const order = await this.orderService.createOrder(orderData).toPromise();
-      // await this.cartService.clearCart(cart.id).toPromise();
-
-      // this.orderService.lastOrder.set(order!);
-      // this.router.navigate(['/order-confirmation', order?.id]);
+      
     } catch (err) {
       this.error = 'Failed to place order. Please try again.';
     } finally {
