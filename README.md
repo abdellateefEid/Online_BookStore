@@ -86,11 +86,6 @@ bookstore-app/
 │       ├── app.component.*      # Root component
 │       ├── app.config.ts        # Global configuration
 │       └── app.routes.ts        # App routing setup
-├── api/                         # Node.js backend (Express)
-│   ├── routes/
-│   │   ├── books.js             # Product endpoints
-│   │   └── payments.js          # Stripe integration
-│   └── ...
 ├── database/                    # Mock data or DB setup for dev
 ```
 
