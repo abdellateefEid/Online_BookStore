@@ -1,5 +1,5 @@
 # BookstoreApp 📚 
-##Angular 19 + Stripe E-Commerce Solution
+**Angular 19 + Stripe E-Commerce Solution**
 
 🔗 [Live Website](https://kitaabi-zeta.vercel.app/)  
 🎬 [Demo Video](https://www.youtube.com/watch?v=LVSavDxwY_Q)
