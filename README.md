@@ -42,6 +42,50 @@ A full-featured bookstore application with:
 
 ---
 
+# 🏗️ Project Architecture
+
+The application follows a modular and scalable folder structure, with clear separation of concerns and best practices in Angular:
+
+```
+bookstore-app/
+├── src/
+│   └── app/
+│       ├── auth/                # Login, registration
+│       ├── core/                # Global services, guards, models, pipes, validators
+│       ├── dashboard/           # Main dashboard views
+│       ├── features/            # Core business features
+│       │   ├── books/           
+│       │   ├── cart/            
+│       │   ├── checkout/        
+│       │   ├── order-history/   
+│       │   ├── order-details/   
+│       │   ├── wishlist/        
+│       │   ├── home/            
+│       │   ├── success/         
+│       │   └── ...              
+│       ├── layouts/             # Header, Footer, layout wrappers
+│       ├── shared/              # Reusable components (e.g., confirm-dialog)
+│       ├── app.component.*      # Root component
+│       ├── app.config.ts        # Global configuration
+│       └── app.routes.ts        # App routing setup
+├── api/                         # Node.js backend (Express)
+│   ├── routes/
+│   │   ├── books.js             # Product endpoints
+│   │   └── payments.js          # Stripe integration
+│   └── ...
+├── database/                    # Mock data or DB setup for dev
+```
+
+## 📐 Design Principles:
+
+- **Feature-Based Modularization:** Business logic is encapsulated under `features/` (e.g., cart, books, checkout).
+- **Core Module:** Centralized single-use services, guards, and global utilities.
+- **Shared Module:** Houses reusable components and utilities used across features.
+- **Separation of Concerns:** Clear distinction between authentication, layout, core logic, and features.
+- **Routing & Configuration:** Clean routing in `app.routes.ts` and global configs in `app.config.ts`.
+
+---
+
 ## ⚡ Setup Guide  
 
 ### 1. Install Dependencies  
